@@ -1,13 +1,18 @@
 # Web
 Full Stack Project: School management web platform. Built with JavaScript, ExpressJS, and powered by MySQL.
 
-#
+# Execution Instructions
 
 install dependencies
 ```
 npm install express body-parser mysql cors multer
 npm install -g http-server
 ```
+Execute in /src:
+```
+node server.js
+```
+
 # In Action Screenshots
 ![Vista 1](assets/1.png)
 ![Vista 2](assets/2.png)
