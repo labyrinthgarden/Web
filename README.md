@@ -1,5 +1,5 @@
 # Web
-Full Stack Project: School management web platform. Built with JavaScript, ExpressJS, and powered by MySQL.
+Full Stack Project: School management web platform. Built with Vanilla CSS, JavaScript, ExpressJS, and powered by MySQL.
 
 # Execution Instructions
 
