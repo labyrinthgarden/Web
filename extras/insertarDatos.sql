@@ -1,3 +1,4 @@
+USE db_entrega_de_tareas;
 INSERT INTO Usuarios(user_id,passwd,rol)
 VALUES(1019986037,"gcc","profesor");
 INSERT INTO Usuarios(user_id,passwd,rol)

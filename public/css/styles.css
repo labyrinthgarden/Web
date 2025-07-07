@@ -1,57 +1,98 @@
 body {
-    font-family: Arial, sans-serif;
-    background: url('https://escuelaypedagogia.educacionbogota.edu.co/sites/default/files/2023-11/Glorua%20Valencia%20de%20Casta%C3%B1o.jpg') no-repeat center center fixed;
-    background-size:cover;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    margin:0;
-    position:relative;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: url('https://cdn.rt.emap.com/wp-content/uploads/sites/4/2025/06/06173651/1-Godolphin-and-Latymer-School-OCo-dining-library-and-sixth-form_Jim-Stephensoncrop-748x499.webp') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    transition: background 0.5s ease;
 }
+
 form {
     display: flex;
     align-items: center;
     flex-direction: column;
+    transition: all 0.3s ease;
 }
-input{
-    padding:5px;
+
+input {
+    outline: none;
+    padding: 8px 12px;
+    border: none;
+    border-bottom: 2px solid #101010;
+    transition: border-color 0.3s ease;
+    background:transparent;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
 }
+
+input:focus {
+    outline: none;
+    border-bottom: 3px solid #000000;
+}
+
 label {
     font-size: 1em;
     color: #555;
     text-align: left;
     margin-bottom: 5px;
+    display: block;
+    transition: color 0.3s ease;
 }
+
 .blur-background {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(6px);
-    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.5);
     z-index: -1;
+    transition: all 0.5s ease;
 }
-.login-container {
-    background: rgba(255, 255, 255, 0.85);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+.login-container, .container {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
     width: 320px;
+    max-width: 1000px;
     text-align: center;
     position: relative;
     z-index: 1;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    animation: fadeInUp 0.5s ease-out;
 }
-.input-container{
-    padding:20px;
-    width:300px;
-    margin:0 auto;
+
+.container {
+    width: 100%;
+    margin: 20px;
 }
-.toggle-password{
+
+.login-container:hover, .container:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.input-container {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.toggle-password {
     position: absolute;
-    right: 50px;
-    top:79%;
+    right: 40px;
+    top: 72%;
     transform: translateY(-105%);
     background: none;
     border: none;
@@ -64,90 +105,169 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.2s ease;
 }
-/* Contenedor principal */
-.container {
-    background: rgba(255, 255, 255, 0.95);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-    width: 100%;
-    max-width: 1000px;
-    text-align: center;
-    position: relative;
-    z-index: 1;
+
+.toggle-password:hover {
+    color: #4CAF50;
+    transform: translateY(-105%) scale(1.1);
 }
+
 .title {
-    color: #333;
+    color: #000000;
     margin-bottom: 25px;
     font-size: 2em;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
-/* Estilo para el título de estado */
+
 .status-title {
-    font-size: 20px; /* Aumenta el tamaño de la fuente */
-    font-weight: bold; /* Hace que el texto sea negrita */
-    color: #333; /* Cambia el color del texto */
-    margin: 20px 0; /* Agrega margen superior e inferior */
-    text-align: center; /* Centra el texto */
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+    text-align: center;
+    transition: all 0.3s ease;
 }
-/* Estilos para las leyendas */
+
 .legend {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centra la leyenda horizontalmente */
-    margin: 10px 0;
-    font-size: 16px; /* Ajusta el tamaño de la fuente según sea necesario */
+    justify-content: center;
+    margin: 15px 0;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
+
 .color-box {
     width: 20px;
     height: 20px;
-    margin-left: 10px; /* Espacio entre el texto y el círculo */
-    border-radius: 50%; /* Hace que el cuadro sea circular */
+    margin-left: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
 }
+
+.color-box:hover {
+    transform: scale(1.2);
+}
+
 .red {
-    background-color: red;
+    background-color: #ff5252;
 }
+
 .white {
     background-color: white;
-    border: 1px solid #ccc; /* Opcional: agrega un borde al cuadro blanco */
+    border: 1px solid #ddd;
 }
+
 .green {
-    background-color: green;
+    background-color: #4CAF50;
 }
-/* Estilos para las tablas */
+
 .styled-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    transition: all 0.3s ease;
 }
+
 .styled-table th, .styled-table td {
-    padding: 12px;
-    border: 1px solid #ddd;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
     text-align: left;
+    transition: all 0.2s ease;
 }
+
 .styled-table th {
-    background-color: #4CAF50; /* Color de fondo para encabezados */
-    color: white; /* Color del texto en encabezados */
-    font-weight: bold;
+    background-color: #000000;
+    color: white;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
 }
+
+.styled-table tr {
+    transition: all 0.2s ease;
+}
+
 .styled-table tr:hover {
-    background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
+    background-color: #f5f5f5;
+    transform: translateX(2px);
 }
-/* Botones */
+
+.styled-table tr:hover td {
+    border-color: #d0d0d0;
+}
+
 .submit-task-button {
-    background-color: #4CAF50; /* Color de fondo verde */
-    color: white; /* Color del texto */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    font-size:17px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin:1em;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .submit-task-button:hover {
-    background-color: #45a049; /* Color de fondo al pasar el mouse */
+    background-color: #888887;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
+
 #feedbackText {
     margin-top: 10px;
-    color: red;
+    color: #ff5252;
     font-weight: bold;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Efecto ripple para botones */
+.submit-task-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.submit-task-button:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%, -50%);
+    transform-origin: 50% 50%;
+}
+
+.submit-task-button:focus:not(:active)::after {
+    animation: ripple 0.6s ease-out;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0) translate(-50%, -50%);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(20, 20) translate(-50%, -50%);
+        opacity: 0;
+    }
 }

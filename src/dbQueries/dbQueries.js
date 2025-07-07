@@ -1,8 +1,8 @@
 const mysql=require("mysql2")
 const connection=mysql.createConnection({
   host:"localhost",
-  user:"root",
-  password:"",
+  user: 'root',
+  password: 'tu_contraseña_segura', 
   database:"db_entrega_de_tareas",
 })
 const verifyUser=(user,passwd)=>{

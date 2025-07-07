@@ -27,7 +27,7 @@ function fetchGrupos(){
         }
       })
     }else{
-      console.log("No hay grupos disponibles.")
+      alert("No hay grupos disponibles.")
     }
 })
 .catch((error)=>console.error('Error al cargar los grupos:',error))
