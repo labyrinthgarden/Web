@@ -1,5 +1,10 @@
 # Web
 Full Stack Project: School management web platform. Built with Vanilla CSS, JavaScript, ExpressJS, and powered by MySQL.
+#
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 # Execution Instructions
 Install dependencies:
 ```
